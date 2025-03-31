@@ -681,9 +681,9 @@ body._lock {
 @media (max-width: 40em) {
   .hero__container {
     padding-top: 6.875rem;
-    padding-bottom: 0rem;
-    padding-bottom: 2.5rem;
-    height: 100dvh;
+    padding-bottom: 0.625rem;
+    height: 100vh;
+    height: 100lvh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -696,7 +696,6 @@ body._lock {
 @media (max-width: 23em) {
   .hero__container {
     padding-top: 6.25rem;
-    padding-bottom: 1.25rem;
   }
 }
 .hero__main {
@@ -859,7 +858,7 @@ body._lock {
   z-index: 1;
   top: 0;
   right: 0;
-  background: url("./img/casino-star.png") 0 0/contain no-repeat;
+  background: url("../img/casino-star.png") 0 0/contain no-repeat;
   width: 8.4375rem;
   aspect-ratio: 1/1;
   -webkit-transform: translate(30%, -40%);
@@ -871,7 +870,7 @@ body._lock {
     width: 6.25rem;
   }
 }
-@media (max-width: 64em) {
+@media (max-width: 40em) {
   .funding-progress::after {
     display: none;
   }
@@ -1107,6 +1106,7 @@ body._lock {
 @media (max-width: 48em) {
   .about__title {
     margin-bottom: 1.875rem;
+    text-align: center;
   }
 }
 .about__items {
