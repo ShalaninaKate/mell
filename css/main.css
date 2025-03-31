@@ -682,9 +682,8 @@ body._lock {
   .hero__container {
     padding-top: 6.875rem;
     padding-bottom: 0rem;
-    margin-bottom: 2.5rem;
-    height: 100vh;
-    overflow: scroll;
+    padding-bottom: 2.5rem;
+    height: 100dvh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -697,7 +696,7 @@ body._lock {
 @media (max-width: 23em) {
   .hero__container {
     padding-top: 6.25rem;
-    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 }
 .hero__main {
