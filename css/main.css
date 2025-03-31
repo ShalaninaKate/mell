@@ -683,7 +683,7 @@ body._lock {
     padding-top: 6.875rem;
     padding-bottom: 0.625rem;
     height: 100vh;
-    height: 100lvh;
+    height: 100svh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
