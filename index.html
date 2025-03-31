@@ -129,8 +129,9 @@
       		<div class="about__items">
       			<article class="about__item">
 
-      				<picture class="about__item-image animate">
-      					<source srcset="./img/about/01.webp" type="image/webp">
+      				<picture class="about__item-image about__item-image--1">
+      					<source media="(min-width:641px)" srcset="./img/about/01.webp" type="image/webp">
+      					<source media="(max-width:640px)" srcset="./img/about/01-mob.webp" type="image/webp">
       					<img loading="lazy" src="./img/about/01.png" width="" height="" alt="">
       				</picture>
 
@@ -146,7 +147,7 @@
       			</article>
       			<article class="about__item">
 
-      				<picture class="about__item-image about__item-image--2 animate">
+      				<picture class="about__item-image about__item-image--2">
       					<source srcset="./img/about/02.webp" type="image/webp">
       					<img loading="lazy" src="./img/about/02.png" width="" height="" alt="">
       				</picture>
