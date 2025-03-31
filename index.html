@@ -20,7 +20,7 @@
 	<div class="wrapper">
 
 
-		<header class="header animate">
+		<header class="header">
 	<div class="header__body container">
 
 		<div href="#" class="header__logo logo">
@@ -89,7 +89,7 @@
       				the ludo lifestyle
       				becomes the norm. Join our presale and become part of the legend!</p>
       			<div class="hero__body">
-      				<div class="hero__funding funding-progress">
+      				<div class="hero__funding funding-progress animate">
       					<div class="funding-progress__header">
       						<span class="funding-progress__stage">FINAL STAGE</span>
       						<span class="funding-progress__status"><span>LIVE</span></span>
@@ -111,7 +111,8 @@
       				</div>
       				<div class="hero__image">
       					<picture>
-      						<source srcset="./img/men.webp" type="image/webp">
+      						<source media="(min-width:641px)" srcset="./img/men.webp" type="image/webp">
+      						<source media="(max-width:640px)" srcset="./img/men-mob.webp" type="image/webp">
       						<img src="./img/men.png" alt="men">
       					</picture>
       				</div>
@@ -128,7 +129,7 @@
       		<div class="about__items">
       			<article class="about__item">
 
-      				<picture class="about__item-image">
+      				<picture class="about__item-image animate">
       					<source srcset="./img/about/01.webp" type="image/webp">
       					<img loading="lazy" src="./img/about/01.png" width="" height="" alt="">
       				</picture>
@@ -145,7 +146,7 @@
       			</article>
       			<article class="about__item">
 
-      				<picture class="about__item-image about__item-image--2">
+      				<picture class="about__item-image about__item-image--2 animate">
       					<source srcset="./img/about/02.webp" type="image/webp">
       					<img loading="lazy" src="./img/about/02.png" width="" height="" alt="">
       				</picture>
@@ -255,8 +256,8 @@
 					</ul>
 					<div class="tokenomics__item-image">
 						<picture>
-							<source srcset="../img/men2-mob.webp" type="image/webp">
-							<img loading="lazy" src="../img/men2-mob.png" width="" height="" alt="">
+							<source srcset="./img/men2-mob.webp" type="image/webp">
+							<img loading="lazy" src="./img/men2-mob.png" width="" height="" alt="">
 						</picture>
 					</div>
 				</div>
