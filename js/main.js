@@ -216,6 +216,76 @@ function body_lock_add(delay) {
     }, delay);
   }
 }
+function fitTextToContainer() {
+  const container = document.querySelector('.hero__main');
+  const text = container.querySelector('.hero__title');
+  if (!container || !text) {
+    console.warn("Элемент контейнера или текста не найден!");
+    return;
+  }
+  let fontSize = 100; // Начальный размер шрифта
+  text.style.fontSize = `${fontSize}px`;
+
+  // Уменьшаем шрифт, пока текст не впишется в ширину контейнера
+  while (text.scrollWidth > container.clientWidth && fontSize > 8) {
+    fontSize -= 1;
+    text.style.fontSize = `${fontSize}px`;
+  }
+}
+
+// Запускаем функцию при загрузке и изменении размера окна
+window.addEventListener('resize', fitTextToContainer);
+fitTextToContainer();
+function loadLanguage(lang) {
+  fetch(`lang/${lang}.json`).then(res => res.json()).then(data => {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      const value = getNestedValue(data, key);
+      if (value) {
+        el.innerHTML = value; // innerHTML, если в строке есть <span>
+      }
+    });
+    localStorage.setItem('lang', lang); // сохраняем язык
+
+    fitTextToContainer();
+  });
+}
+function initDropdowns() {
+  const dropdown = document.querySelector(".language-select");
+  if (!dropdown) return;
+  const dropdownButton = dropdown.querySelector(".language-select__btn");
+  const dropdownItems = dropdown.querySelectorAll(".language-select__option");
+  const dropdownTitle = dropdown.querySelector(".language-select__title");
+  function toggleDropdown() {
+    dropdown.classList.toggle("show");
+  }
+  function selectItem(event) {
+    const selectedLang = event.target.getAttribute('data-btn');
+    dropdownTitle.textContent = event.target.textContent;
+    dropdown.classList.remove("show");
+    loadLanguage(selectedLang);
+  }
+  function closeDropdown(event) {
+    if (!dropdown.contains(event.target)) {
+      dropdown.classList.remove("show");
+    }
+  }
+  dropdownButton.addEventListener("click", toggleDropdown);
+  dropdownItems.forEach(item => item.addEventListener("click", selectItem));
+  document.addEventListener("click", closeDropdown);
+
+  // загрузка языка при старте
+  const savedLang = localStorage.getItem('lang') || 'en';
+  const activeItem = [...dropdownItems].find(item => item.getAttribute('data-btn') === savedLang);
+  if (activeItem) {
+    dropdownTitle.textContent = activeItem.textContent;
+  }
+  loadLanguage(savedLang);
+}
+function getNestedValue(obj, path) {
+  return path.split('.').reduce((o, key) => o ? o[key] : null, obj);
+}
+initDropdowns();
 })();
 
 /******/ })()
