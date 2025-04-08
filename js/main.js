@@ -242,11 +242,10 @@ function loadLanguage(lang) {
       const key = el.getAttribute('data-i18n');
       const value = getNestedValue(data, key);
       if (value) {
-        el.innerHTML = value; // innerHTML, если в строке есть <span>
+        el.innerHTML = value;
       }
     });
-    localStorage.setItem('lang', lang); // сохраняем язык
-
+    localStorage.setItem('lang', lang);
     fitTextToContainer();
   });
 }

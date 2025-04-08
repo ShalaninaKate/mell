@@ -18,17 +18,26 @@
   },
   "about": {
     "title": "ABOUT <span class=\"title--red\">US</span>",
-    "block1_title": "MELL — <span>More Than a Token</span>, It’s a Philosophy of Chaos and Hype!",
-    "block1_text": "Hype, provocation, speed, and money—everything associated with success is packed into MELL. We took the spirit of a meme legend and brought it into crypto to shake up the industry. Let the mayhem begin!",
+    "block1_title": "MELL — <span>More Than a Token</span>, <br> It’s a Philosophy of Chaos and Hype!",
+    "block1_text": "Hype, provocation, speed, and money — everything associated with success is packed into MELL. We took the spirit of a meme legend and brought it into crypto to shake up the industry. Let the mayhem begin!",
     "block2_title": "Why is MELL <span>Destined for Success?</span>",
-    "block2_text": "By investing in MELL, you become part of a powerful movement. MELL’s marketing is built on the ideology of a cultural icon, and we know how to turn that into the #1 meme coin on Solana."
+    "block2_text": "By investing in MELL, you become part of a powerful movement. MELL’s marketing is built on the ideology of a cultural icon, and we know how to turn that into the #1 meme coin on Solana. Cry about it, or grab MELL for your wallet — before it's too late!"
   },
   "roadmap": {
-    "title": "Road<span>MAP</span>",
+    "title": "Road<span class=\"title--red\">MAP</span>",
+	 "stages_title": [
+      "stage 1",
+      "stage 2",
+      "stage 3",
+      "stage 4",
+      "stage 5",
+      "stage 6",
+      "stage 7"
+    ],
     "stages": [
-      "The movement begins! Marketing push.",
+      "The movement begins! <br> Marketing push.",
       "Website and smart contract development for MELL.",
-      "MELL token sale",
+      "MELL token <br> sale",
       "Listings on top exchanges: ByBit, OKX, Huobi, BingX, Mexc.",
       "Development of a signature slot game based on MELL.",
       "Integration of MELL into top licensed casinos.",
@@ -36,28 +45,42 @@
     ]
   },
   "tokenomics": {
-    "title": "token<span>omics</span>",
-    "text1": "MELL is an ecosystem built on stability, growth, and community benefits.",
-    "text2": "MELL is the go-to token for those who want real gains in crypto.",
+    "title": "token<span class=\"title--red\">omics</span>",
+    "text1": "<span>MELL</span> is an ecosystem built on stability, growth, and community benefits.",
+    "text2": "<span>MELL</span> is the go-to token for those who want real gains in crypto. We handle the technical side — you just buy and watch your gains multiply. No time to hesitate — jump in now!",
     "distribution": "Token Distribution",
     "allocation": "Fund Allocation",
     "distributionList": [
-      "Presale <span>40%</span>",
-      "Public Sale <span>30%</span>",
-      "Team <span>15%</span>",
-      "Marketing <span>10%</span>",
-      "Staking & Rewards <span>5%</span>"
+      "Presale",
+      "Public Sale",
+      "Team",
+      "Marketing",
+      "Staking & Rewards"
+    ],
+	  "distributionList_text": [
+      "for the early adopters",
+      "available for all",
+      "to drive the project forward",
+      "for growth and collaborations",
+      "for active participants"
     ],
     "allocationList": [
-      "Development <span>50%</span>",
-      "Marketing <span>30%</span>",
-      "Operations <span>10%</span>",
-      "Legal & Security <span>5%</span>",
-      "Reserve <span>5%</span>"
+      "Development",
+      "Marketing",
+      "Operations",
+      "Legal & Security",
+      "Reserve"
+    ],
+	 "allocationList_text": [
+      "new features and improvements",
+      "high-impact campaigns",
+      "project maintenance",
+      "compliance and protection",
+      "for unexpected situations"
     ]
   },
   "buy": {
-    "title": "how to <span>Buy</span>",
+    "title": "how to <span class=\"title--red\">Buy</span>",
     "steps": [
       {
         "title": "Connect Your Wallet",
@@ -65,7 +88,7 @@
       },
       {
         "title": "Get Your Tokens",
-        "text": "Choose how much MELL you want— the more, the bigger the bonuses!"
+        "text": "Choose how much MELL you want — the more, the bigger the bonuses!"
       },
       {
         "title": "Confirm the Transaction",
@@ -82,14 +105,15 @@
     ]
   },
   "demo": {
-    "title": "demo <span>slot</span>",
+    "title": "demo <span class=\"title--red\">slot</span>",
     "subtitle": "Loaded up on MELL?",
     "points": [
       "Use your tokens to play our exclusive slot game!",
       "Spin the reels, multiply your MELL, and show how real gains are made.",
       "Bring your friends through referrals and earn even more tokens!",
       "Two tokens, two opportunities: MELL — the main currency for purchases and epic gaming.",
-      "Free Spin Token — free spins that can be converted into MELL."
+      "Free Spin Token — free spins that can be converted into MELL.",
+      "Join in, spin, and take the industry by storm with MELL!"
     ]
   }
 }

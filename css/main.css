@@ -413,6 +413,10 @@ body._lock {
   }
 }
 
+.text-red {
+  color: var(--red);
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -759,7 +763,6 @@ body._lock {
   opacity: 0;
   visibility: hidden;
   font-size: 1rem;
-  color: var(--text);
   -webkit-transform: translate(0, -0.625rem);
   -ms-transform: translate(0, -0.625rem);
   transform: translate(0, -0.625rem);
@@ -776,11 +779,6 @@ body._lock {
 @media (any-hover: hover) {
   .language-select__option:hover {
     background-color: #b67e05;
-  }
-}
-@media (max-width: 96em) {
-  .language-select__option {
-    font-size: 0.875rem;
   }
 }
 .language-select.show .language-select__options {
@@ -1709,9 +1707,6 @@ body._lock {
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 158%;
-}
-.tokenomics__el-title span {
-  color: var(--red);
 }
 @media (max-width: 23.4375em) {
   .tokenomics__el-title {
