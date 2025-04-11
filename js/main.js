@@ -245,6 +245,17 @@ function loadLanguage(lang) {
         el.innerHTML = value;
       }
     });
+    document.querySelectorAll('[data-i18n-img]').forEach(el => {
+      const key = el.getAttribute('data-i18n-img');
+      const value = getNestedValue(data, key);
+      if (value) {
+        if (el.tagName === 'SOURCE') {
+          el.setAttribute('srcset', value);
+        } else {
+          el.setAttribute('src', value);
+        }
+      }
+    });
     localStorage.setItem('lang', lang);
     fitTextToContainer();
   });

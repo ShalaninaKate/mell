@@ -17,6 +17,8 @@
     "hardCap": "Hard Cap:"
   },
   "about": {
+	"image2Webp": "./img/about/02.webp",
+    "image2Png": "./img/about/02.png",
     "title": "ABOUT <span class=\"title--red\">US</span>",
     "block1_title": "MELL — <span>More Than a Token</span>, <br> It’s a Philosophy of Chaos and Hype!",
     "block1_text": "Hype, provocation, speed, and money — everything associated with success is packed into MELL. We took the spirit of a meme legend and brought it into crypto to shake up the industry. Let the mayhem begin!",
