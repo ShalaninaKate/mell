@@ -216,67 +216,26 @@ function body_lock_add(delay) {
     }, delay);
   }
 }
-
-// function fitTextToContainer() {
-// 	const container = document.querySelector('.hero__main');
-// 	const text = container.querySelector('.hero__title');
-
-// 	if (!container || !text) {
-// 		console.warn("Элемент контейнера или текста не найден!");
-// 		return;
-// 	}
-
-// 	let fontSize = 90; // Начальный размер шрифта
-// 	text.style.fontSize = `${fontSize}px`;
-
-// 	// Уменьшаем шрифт, пока текст не впишется в ширину контейнера
-// 	while (text.scrollWidth > container.clientWidth && fontSize > 8) {
-// 		fontSize -= 1;
-// 		text.style.fontSize = `${fontSize}px`;
-// 	}
-// }
-
-function fitTextToContainer(containerSelector, textSelector) {
-  let initialFontSize = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 90;
-  let minFontSize = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 8;
-  const container = document.querySelector(containerSelector);
-  if (!container) {
-    console.warn(`Контейнер ${containerSelector} не найден!`);
+function fitTextToContainer() {
+  const container = document.querySelector('.hero__main');
+  const text = container.querySelector('.hero__title');
+  if (!container || !text) {
+    console.warn("Элемент контейнера или текста не найден!");
     return;
   }
-  const text = container.querySelector(textSelector);
-  if (!text) {
-    console.warn(`Текст ${textSelector} в контейнере ${containerSelector} не найден!`);
-    return;
-  }
-  let fontSize = initialFontSize;
+  let fontSize = 90; // Начальный размер шрифта
   text.style.fontSize = `${fontSize}px`;
 
   // Уменьшаем шрифт, пока текст не впишется в ширину контейнера
-  while (text.scrollWidth > container.clientWidth && fontSize > minFontSize) {
+  while (text.scrollWidth > container.clientWidth && fontSize > 8) {
     fontSize -= 1;
     text.style.fontSize = `${fontSize}px`;
   }
 }
 
-// Применяем для разных контейнеров
-function resizeAllText() {
-  fitTextToContainer('.hero__main', '.hero__title', 90);
-  // fitTextToContainer(
-  //   ".funding-progress__progress-value",
-  //   ".funding-progress__progress-amount",
-  //   24
-  // ); 
-}
-
-// Вызываем при загрузке и изменении размера окна
-window.addEventListener('resize', resizeAllText);
-resizeAllText();
-
-// // Запускаем функцию при загрузке и изменении размера окна
-// window.addEventListener('resize', fitTextToContainer);
-// fitTextToContainer();
-
+// Запускаем функцию при загрузке и изменении размера окна
+window.addEventListener('resize', fitTextToContainer);
+fitTextToContainer();
 function loadLanguage(lang) {
   fetch(`lang/${lang}.json`).then(res => res.json()).then(data => {
     document.querySelectorAll('[data-i18n]').forEach(el => {
