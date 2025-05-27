@@ -11,10 +11,11 @@
   "hero": {
     "title": "<span>Живи по-крупному с <span class=\"title--red\">MELLSTROY</span>-</span> <br> рискуй разумно, выигрывай уверенно!",
     "text": "Добро пожаловать в мир <span>MELLSTROY!</span> где крипта встречает мемы, а смелость и стратегия ведут к успеху. Участвуй в предпродаже и впиши себя в цифровую историю!",
-    "stage": "ФИНАЛ",
+    "stage": "Этап",
     "status": "ЭФИР",
     "stageTarget": "Цель этапа:",
-    "hardCap": "Макс. этап:"
+    "hardCap": "Макс. этап:",
+      "progress-label": "собрано:"
   },
   "about": {
 	"image2Webp": "./img/about/02-ru.webp",

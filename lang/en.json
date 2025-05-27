@@ -11,10 +11,11 @@
   "hero": {
     "title": "<span>LIVE LIKE <span class=\"title--red\">MELLSTROY</span> -</span> <span>BET ALL AND WIN BIG!</span>",
     "text": "Welcome to the world of <span>MELLSTROY!</span> Where memes meet crypto and the ludo lifestyle becomes the norm. Join our presale and become part of the legend!",
-    "stage": "FINAL STAGE",
-    "status": "LIVE",
+    "stage": "Stage",
+    "status": "$0,0001",
     "stageTarget": "Stage Target:",
-    "hardCap": "Hard Cap:"
+    "hardCap": "Hard Cap:",
+    "progress-label": "raised:"
   },
   "about": {
 	"image2Webp": "./img/about/02.webp",
